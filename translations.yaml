@@ -1,0 +1,109 @@
+
+
+# You can add more languages
+zh:
+    Select previous generated input params: 选择之前生成的输入参数
+    Audio Duration: 音频时长
+    Format: 格式
+    -1 means random duration (30 ~ 240).: -1 表示随机时长（30 到 240）。
+    Check to enable Audio-to-Audio generation using a reference audio.: 选中此选项以启用使用参考音频进行音频到音频的生成。
+    Enable Audio2Audio: 启用音频到音频
+    Lora Name or Path: Lora 名称或路径
+    Lora weight: Lora 权重
+    Support tags, descriptions, and scene. Use commas to separate different tags.: 支持标签、描述和场景。使用逗号分隔不同的标签。
+    Tags and lyrics examples are from AI music generation community.: 标签和歌词示例均来自AI音乐生成社区。
+    Support lyric structure tags like [verse], [chorus], and [bridge] to separate different parts of the lyrics.: 支持诸如 [verse]、[chorus] 和 [bridge] 这样的歌词结构标签，以分隔歌词的不同部分。
+    Use [instrumental] or [inst] to generate instrumental music. Not support genre structure tag in lyrics: 使用 [instrumental] 或 [inst] 生成纯音乐。歌词中不支持流派结构标签
+    Preset: 预设
+    Custom: 自定义
+    Modern Pop: 现代流行乐
+    Rock: 摇滚
+    Hip Hop: 嘻哈
+    Country: 乡村音乐
+    EDM: 电子舞曲
+    Reggae: 雷鬼
+    Classical: 古典音乐
+    Jazz: 爵士
+    Metal: 金属乐
+    Tags: 标签
+    Basic Settings: 基本设置
+    Infer Steps: 推理步数
+    When guidance_scale_lyric > 1 and guidance_scale_text > 1, the guidance scale will not be applied.: "当 `歌词条件引导系数` > 1 且 `文本条件引导系数` > 1 时，引导比例将不适用。"
+    Guidance Scale: 条件引导系数
+    Guidance Scale Text: 文本条件引导系数
+    Guidance scale for text condition. It can only apply to cfg. set guidance_scale_text=5.0, guidance_scale_lyric=1.5 for start: "该参数仅适用于 CFG（无分类器引导）机制。初始设置建议：`文本条件引导系数`=5.0，`歌词条件引导系数`=1.5。"
+    Guidance Scale Lyric: 歌词条件引导系数
+    manual seeds (default None): 手动种子（默认值：无）
+    Seed for the generation: 生成过程的随机种子
+
+    Advanced Settings: 高级设置
+    Scheduler Type: 调度器类型
+    Scheduler type for the generation. euler is recommended. heun will take more time. pingpong use SDE: 生成所用的调度器类型。推荐 euler。heun 耗时更长。pingpong 使用 SDE
+    euler: euler
+    heun: heun
+    pingpong: pingpong
+    CFG Type: CFG 类型
+    CFG type for the generation. apg is recommended. cfg and cfg_star are almost the same.: 生成所用的 CFG 类型。推荐 apg。cfg 和 cfg_star 几乎相同
+    Use Entropy Rectifying Guidance for tag. It will multiple a temperature to the attention to make a weaker tag condition and make better diversity.: 对标签使用熵校正引导。它会给注意力乘以一个温度值，以减弱标签条件并获得更好的多样性
+    use ERG for tag: 对标签使用 ERG
+    The same but apply to lyric encoder's attention.: 同样的操作，但应用于歌词编码器的注意力
+    use ERG for lyric: 对歌词使用 ERG
+    The same but apply to diffusion model's attention.: 同样的操作，但应用于扩散模型的注意力
+    use ERG for diffusion: 对扩散使用 ERG
+    Granularity Scale: 粒度系数
+    Granularity scale for the generation. Higher values can reduce artifacts: 生成的粒度尺度。值越高，可减少伪影
+    Guidance Interval: 引导间隔
+    Guidance interval for the generation. 0.5 means only apply guidance in the middle steps (0.25 * infer_steps to 0.75 * infer_steps): 生成的引导间隔。0.5 表示仅在中间步骤（推理步骤的 0.25 倍至 0.75 倍）应用引导
+    Guidance Interval Decay: 引导间隔衰减
+    Guidance interval decay for the generation. Guidance scale will decay from guidance_scale to min_guidance_scale in the interval. 0.0 means no decay.: 生成的引导间隔衰减。引导尺度会在该间隔内从引导尺度衰减至最小引导尺度。0.0 表示无衰减
+    Min Guidance Scale: 最小引导系数
+    Min guidance scale for guidance interval decay's end scale: 引导间隔衰减的结束系数所对应的最小引导系数
+    OSS Steps: OSS 步骤
+    Optimal Steps for the generation. But not test well: 生成的优化步骤。但尚未经过充分测试
+    Text2Music Generated Audio 1: 文本到音乐生成的音频 1
+    Text2Music Parameters: 文本到音乐生成参数
+    retake: 重录
+    repainting: 重绘
+    edit: 编辑
+    extend: 延长
+    variance: 变奏
+    retake seeds (default None): 重录种子（默认无）
+    repaint seeds (default None): 重绘种子（默认无）
+    Repaint Start Time: 重绘开始时间
+    Repaint Source: 重绘来源
+    text2music: 文本到音乐
+    last_repaint: 上次重绘
+    upload: 上传
+    Edit Tags: 编辑标签
+    Edit Lyrics: 编辑歌词
+    edit seeds (default None): 编辑种子（默认无）
+    Edit Type: 编辑类型
+    "`only_lyrics` will keep the whole song the same except lyrics difference. Make your diffrence smaller, e.g. one lyrc line change.\nremix can change the song melody and genre": "`only_lyrics` 会保持整首歌曲不变，除了歌词有所不同。让你的改动小一些，例如只改动一行歌词。\n `remix` 可以改变歌曲的旋律和风格。"
+    only_lyrics: 仅歌词
+    remix: 重新混音
+    edit_n_min: 编辑最小值
+    edit_n_max: 编辑最大值
+    Edit Source: 编辑来源
+
+    extend seeds (default None): 延长种子（默认无）
+    Left Extend Length: 左侧延长长度
+    Right Extend Length: 右侧延长长度
+    Extend Source: 延长来源
+    Extend Parameters: 延长参数
+
+    Load: 加载
+    Retake Generated Audio 1: 重录生成的音频 1
+    Retake Parameters: 重录参数
+    Retake: 重录
+    Repaint End Time: 重绘结束时间
+    Edit Generated Audio 1: 编辑生成的音频 1
+    Edit Parameters: 编辑参数
+    Edit: 编辑
+    Generate: 生 成
+    Refer audio strength: 参考音频强度
+    Reference Audio (for Audio2Audio): 参考音频（用于音频转音频）
+    Sample: 随机抽卡
+    A Step Towards Music Generation Foundation Model: 🎵 迈向音乐生成基础模型的一步
+    Repaint: 重绘
+    Repaint Generated Audio 1: 重绘生成音频 1
+    Repaint Parameters: 重绘参数

@@ -993,8 +993,11 @@ def create_main_demo_ui(
     text2music_process_func=dump_func,
     sample_data_func=dump_func,
     load_data_func=dump_func,
+    ui_mode=None
 ):
     with gr.Blocks(
+        theme="Ocean",
+        js=ui_mode,
         title="ACE-Step Model 1.0 DEMO",
     ) as demo:
         gr.Markdown(
